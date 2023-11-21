@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Novo EarBuds</title>
+    <title>LOOP EarBuds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,42 +12,30 @@
     <!-- link to greensock main library and scroll plugin -->
   </head>
   <body>
-    <div class="grid-con">
+    <div class="grid-con container">
       <div class="col-span-full">
-        <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
-
-          <button class="Hotspot" slot="hotspot-1" data-position="22.114881038306805m 76.41863141465969m 92.72411936367459m" data-normal="0m 3.422854333301474e-8m 0.9999999999999996m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation" id="hotspot-1">
-              </div>
+        <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+          <button class="Hotspot" slot="hotspot-1" data-position="-149.33284568722837m 252.49204696555853m 9.621595544963554m" data-normal="-0.012088690866540611m 0.9999268393103505m 0.00042376874069181744m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-1"></div>
           </button>
-          
-          <button class="Hotspot" slot="hotspot-2" data-position="39.77344034970514m 35.166245058302174m -60.072171234357924m" data-normal="0.9907333466758325m -0.04850912905944068m 0.12686331298842657m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation" id="hotspot-2">
-              </div>
+          <button class="Hotspot" slot="hotspot-2" data-position="-160.12475612769205m 250.5487271670387m 39.3670431432447m" data-normal="0.000800540676760726m 0.9999919315677883m -0.0039364875141087744m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-2"></div>
           </button>
-          
-          <button class="Hotspot" slot="hotspot-3" data-position="2.4492803380076666m 10.895113621640228m -85.35108450441453m" data-normal="-0.09319883119990514m 0.7267314834938743m -0.6805698559014823m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation" id="hotspot-3">
-              </div>
+          <button class="Hotspot" slot="hotspot-3" data-position="-150.93116700198988m 210.5690859310705m 92.09691469624897m" data-normal="-0.060442760225086954m 0.09364521680188066m 0.9937692116917798m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-3"></div>
           </button>
-          
-          <button class="Hotspot" slot="hotspot-4" data-position="8.209706351369618m -74.79136002933947m 11.903197074480694m" data-normal="0.018820622483499312m -0.18212597696599156m -0.9830950679784314m" data-visibility-attribute="visible">
-              <div class="HotspotAnnotation" id="hotspot-4">        
-              </div>
+          <button class="Hotspot" slot="hotspot-4" data-position="-197.10183812480415m 83.52688469080668m 45.1432805486055m" data-normal="0.0729145522580604m -0.12632995491074606m 0.989304912835904m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-4"></div>
           </button>
-          <button slot="ar-button" id="ar-button">
-              View in your space
-          </button>
-          <div id="ar-prompt">
-              <img src="images/ar_hand_prompt.png">
-          </div>
-        </model-viewer>
+        </model-viewer> 
       </div>
 
       <template id="hotspot-template">
         <div class="TemplateHotspotAnnotation">
           <h3 class="hotspot-heading"></h3>
           <p class="hotspot-description"></p>
+          <img class="hotspot-image" alt="earbud hotspots images">
+
         </div>
       </template>
 
